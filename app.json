@@ -8,14 +8,17 @@
     "scheme": "reactnatviemoviesapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.yusufbakir.reactnatviemoviesapp",
       "icon": "./assets/images/logo.png",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/logo.png",
         "backgroundColor": "#ffffff"
+        
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
