@@ -67,8 +67,8 @@ query : ''
               className="mb-4 mt-3"
               data={trendingMovies}
               renderItem={({ item, index }) => (<TrendingCard movie={item} index={index}></TrendingCard>)}
-              keyExtractor={(item)  => item.movie_id?.toString()}
-             
+              keyExtractor={(item)  => item.$id.toString()}
+           
                 />
 
 
@@ -90,7 +90,8 @@ query : ''
 
 
               keyExtractor={(item) => item.id.toString() } numColumns={3}
-               columnWrapperStyle={{ justifyContent: "flex-start", gap: 20 ,padding :5,marginBottom: 10 }} scrollEnabled={false} className="mt-2 pb-32"/>
+               columnWrapperStyle={{ justifyContent: "flex-start", gap: 20 ,padding :5,marginBottom: 10 }}
+                scrollEnabled={false} className="mt-2 pb-32"/>
               </>
             
         </View>

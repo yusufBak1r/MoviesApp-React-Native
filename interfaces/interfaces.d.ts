@@ -16,8 +16,12 @@ interface Movie {
 }
 
 interface TrendingMovie {
+  $id: string;
+  $createdAt: string;
+  $updatedAt: string;
+
   searchTerm: string;
-  movie_id: number;
+  movie_Id: number;
   title: string;
   count: number;
   poster_url: string;
